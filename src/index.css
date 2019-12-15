@@ -6,7 +6,7 @@
 
 /* app CSS reset */
 body, div, p {
-margin: 0;
-padding: 0;
-background: grey;
+    margin: 0;
+    padding: 0;
+    background: grey;
 }
