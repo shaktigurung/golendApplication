@@ -1,0 +1,12 @@
+/* app variables */
+:root {
+    /* font */
+    --main-font: 'Poppins', sans-serif;
+}
+
+/* app CSS reset */
+body, div, p {
+margin: 0;
+padding: 0;
+background: grey;
+}
