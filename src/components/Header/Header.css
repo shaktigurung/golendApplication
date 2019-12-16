@@ -2,4 +2,53 @@
 .logo {
     height: 30px;
     width: 128px;
+    margin-top: 10px;
 }
+
+.navbar button {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-size: 1.5rem;
+    padding: 10px;
+    float: right;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.phone-icon {
+    width: 26px;
+    height: 33px;
+}
+
+.profile {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.profile img {
+    height: 144px;
+    width: 144px;
+    border-radius: 50%;
+    height: 9rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ruler-left{
+    position: absolute;
+    width: 29%;
+    color: var(--secondary-color);
+    top: 60px;
+    left: 14%;
+}
+
+.ruler-right{
+    position: absolute;
+    width: 29%;
+    color: var(--secondary-color);
+    top: 60px;
+    right: 14%;
+}
+
