@@ -2,11 +2,12 @@
 :root {
     /* font */
     --main-font: 'Poppins', sans-serif;
+    --primary-color: #1ED070;
 }
 
 /* app CSS reset */
 body, div, p {
     margin: 0;
     padding: 0;
-    background: grey;
+    background: #FFFFFF;
 }
