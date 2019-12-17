@@ -26,13 +26,13 @@ git clone git@github.com:shaktigurung/golendApplication.git
 cd into the directory
 
 ```
-cd into the golendApplication directory
+cd golendApplication 
 ```
 
 install the dependencies for the application
 
 ```
-npm install the dependencies
+npm install 
 ```
 
 ## Running the application 
