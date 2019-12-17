@@ -32,7 +32,7 @@ cd golendApplication
 install the dependencies for the application
 
 ```
-npm install 
+npm install
 ```
 
 ## Running the application 
@@ -50,8 +50,6 @@ To run the test. Please run the following command
 ```
 npm test
 ```
-
-
 ### Running linting test
 
 To check the correct stardard followed for clean coding. Please run the following linting test.
@@ -82,3 +80,4 @@ In order to deploy this application on cloud please go to this [link](https://ww
 ## License
 
 This project is licensed under the MIT License 
+
