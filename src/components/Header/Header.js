@@ -6,18 +6,18 @@ import './Header.css';
 
 export default function Header() {
     return (
-        <div>
+        <header data-test="headerComponent">
             <div className="navbar">
                 <Link to="/years" >    
-                    <img src={logo} className="logo" alt="logo" />
+                    <img src={logo} className="logo" data-test="logoImage" alt="logo" />
                 </Link>
-                <button> 1300 GoLend </button>
+                <button data-test="golendButton"> 1300 GoLend </button>
             </div>
             <div className="profile">
-                <hr className="ruler-left" />
-                <img src={profile} alt="profile" />
-                <hr className="ruler-right" />
+                <hr className="ruler-left" data-test="rulerLeft" />
+                <img src={profile} data-test="profileImage" alt="profile" />
+                <hr className="ruler-right" data-test="rulerRight" />
             </div>
-        </div>
-    )
+        </header>
+    );
 }
