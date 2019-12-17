@@ -12,27 +12,27 @@ describe('VehicleList Component', () => {
   
   let component;
   beforeEach(()=> {
-      component = setUp();
+    component = setUp();
   });
 
   it('should render without error', () => {
     const wrapper = findByTestAttr(component, 'vehiclesContainer');
-    expect(wrapper.length).toBe(0);
+    expect(wrapper.length).toEqual(0);
   });
 
   it('should render heading for vehicle list page', () => {
     const vehiclesHeader = findByTestAttr(component, 'vehiclesHeader');
-    expect(vehiclesHeader.length).toBe(0);
+    expect(vehiclesHeader.length).toEqual(0);
   });
 
   it('should render list of vehicles', () => {
     const vehicleList = findByTestAttr(component, 'vehicleList');
-    expect(vehicleList.length).toBe(0);
+    expect(vehicleList.length).toEqual(0);
   });
   
   it('should render terms for car', () => {
     const terms = findByTestAttr(component, 'terms');
-    expect(terms.length).toBe(0);
+    expect(terms.length).toEqual(0);
   });
   
 });

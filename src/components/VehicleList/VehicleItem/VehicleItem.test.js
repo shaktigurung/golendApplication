@@ -12,7 +12,7 @@ describe('VehicleItem Component', () => {
   
   let component;
   beforeEach(()=> {
-      component = setUp();
+    component = setUp();
   });
 
   it('should render without error', () => {
