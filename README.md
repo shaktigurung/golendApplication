@@ -56,7 +56,7 @@ npm test
 To check the correct stardard followed for clean coding. Please run the following linting test.
 
 ```
-npm lint
+npm run lint
 ```
 
 ## Deployment
