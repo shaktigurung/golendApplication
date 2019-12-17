@@ -4,7 +4,7 @@ import profile from './../../assets/logo/profile.png';
 import {Link} from 'react-router-dom';
 import './Header.css';
 
-export default function Header() {
+const Header = () => {
     return (
         <header data-test="headerComponent">
             <div className="navbar">
@@ -21,3 +21,5 @@ export default function Header() {
         </header>
     );
 }
+
+export default Header;

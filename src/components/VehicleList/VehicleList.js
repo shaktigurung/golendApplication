@@ -5,8 +5,10 @@ import {vehicles} from '../../database/database';
 import VehicleItem from './VehicleItem/VehicleItem';
 import './VehicleList.css';
 
-function VehicleList(props) {
+const VehicleList = props => {
+
     const {year} = props.location.state;
+
     return (
         <div className="vehicles" data-test="vehiclesContainer">
             <h1 className="header" data-test="vehiclesHeader"> Let&apos;s find your car </h1> 
@@ -15,14 +17,15 @@ function VehicleList(props) {
                     return <li key={vehicle.id}> <VehicleItem year={year} vehicle={vehicle}/> </li>
                 })}
             </ul>
-            <p data-test="terms">  Excludes on road and government costs </p>
+            <p data-test="terms"> * Excludes on road and government costs </p>
         </div>
     );
+    
 }
 
 VehicleList.propTypes = {
     year: PropTypes.string,
-    location: PropTypes.string.isRequired,
+    location: PropTypes.object,
 };
 
 export default withRouter(VehicleList);

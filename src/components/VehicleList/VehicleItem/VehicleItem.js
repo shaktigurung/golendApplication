@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import car from './../../../assets/cars/car.jpg';
 
-export default function VehicleItem(props) {
+const VehicleItem = props => {
+
     const {year={}, vehicle={}} = props;
+
     return (
         <div className="vehicle-item" data-test="vehicleItem">
             <img className="vehicle-image" src={car}  data-test="carImage"/>
@@ -16,6 +18,7 @@ export default function VehicleItem(props) {
             </div>
         </div> 
     );
+    
 }
 
 VehicleItem.propTypes = {
@@ -23,3 +26,4 @@ VehicleItem.propTypes = {
     vehicle: PropTypes.object
 };
 
+export default VehicleItem;
