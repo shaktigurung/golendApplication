@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import car from './../../../assets/cars/car.jpg';
 
 export default function VehicleItem(props) {
@@ -14,5 +15,11 @@ export default function VehicleItem(props) {
                 </div>
             </div>
         </div> 
-    )
+    );
 }
+
+VehicleItem.propTypes = {
+    year: PropTypes.string,
+    vehicle: PropTypes.object
+};
+
