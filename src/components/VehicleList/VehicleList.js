@@ -9,14 +9,14 @@ const VehicleList = props => {
 
     const {year} = props.location.state;
 
+    const listItem = vehicles.map((vehicle) => 
+        <li key={vehicle.id}> <VehicleItem year={year} vehicle={vehicle}/> </li>
+    );
+
     return (
         <div className="vehicles" data-test="vehiclesContainer">
             <h1 className="header" data-test="vehiclesHeader"> Let&apos;s find your car </h1> 
-            <ul className="vehicle" data-test="vehicleList">
-                { vehicles.map(vehicle => {
-                    return <li key={vehicle.id}> <VehicleItem year={year} vehicle={vehicle}/> </li>
-                })}
-            </ul>
+            <ul className="vehicle" data-test="vehicleList"> {listItem} </ul>
             <p data-test="terms"> * Excludes on road and government costs </p>
         </div>
     );
