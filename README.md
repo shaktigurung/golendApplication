@@ -21,21 +21,18 @@ Create a directory and clone the github repository using the following command:
 
 ```
 git clone git@github.com:shaktigurung/golendApplication.git
-
 ```
 
 cd into the directory
 
 ```
 cd into the golendApplication directory
-
 ```
 
 install the dependencies for the application
 
 ```
 npm install the dependencies
-
 ```
 
 ## Running the application 
@@ -53,7 +50,6 @@ To run the test. Please run the following command
 ```
 npm test
 ```
-
 
 ### Running linting test
 
