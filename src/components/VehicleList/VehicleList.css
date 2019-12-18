@@ -1,3 +1,5 @@
+/*** CSS Styling for Vehicle List and Vehicle Item Component ***/
+
 .vehicles p {
     text-align: center;
 }
@@ -28,7 +30,7 @@ ul.vehicle {
 }
 
 .vehicle-image {
-    width: 146;
+    width: 146px;
     height: 126px;
     padding: 30px;
 }
@@ -57,4 +59,45 @@ ul.vehicle {
 
 .amount {
     font-size: 3rem;
+}
+
+/*** Media Queries ***/
+@media only screen and (max-width: 600px) {
+    .vehicle-item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vehicle-image {
+        width: 146px;
+        height: 126px;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .content h5 {
+        font-size: 1rem;
+        font-weight: 600px;
+    }
+    
+    .content p {
+        font-size: 0.8rem;
+        margin-top: -30px;
+    }
+
+    .amount {
+        font-size: 1.2rem;
+    }
+
+    .price h2 {
+        font-size: 0.8rem;
+    }
+
+    .vehicles p {
+        font-size: 0.8rem;
+    }
 }
