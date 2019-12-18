@@ -61,7 +61,7 @@ ul.vehicle {
     font-size: 3rem;
 }
 
-/*** Media Queries ***/
+/*** Media Queries for Mobile ***/
 @media only screen and (max-width: 600px) {
     .vehicle-item {
         width: 90%;
@@ -73,10 +73,7 @@ ul.vehicle {
     }
 
     .vehicle-image {
-        width: 146px;
-        height: 126px;
-        padding: 5px;
-        margin: auto;
+        margin:auto;
     }
 
     .content h5 {
@@ -85,12 +82,12 @@ ul.vehicle {
     }
     
     .content p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-top: -30px;
     }
 
     .amount {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .price h2 {
@@ -101,3 +98,22 @@ ul.vehicle {
         font-size: 0.8rem;
     }
 }
+
+/*** Media Queries for Tablet and Ipad ***/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .vehicle-item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .price h2 {
+        font-size: 0.8rem;
+    }
+
+    .amount {
+        font-size: 1.8rem;
+    }
+    
+}
+
