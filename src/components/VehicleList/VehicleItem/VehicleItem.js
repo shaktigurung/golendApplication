@@ -12,7 +12,7 @@ const VehicleItem = props => {
             <div className="content">
                 <h5 data-test="carTitle"><strong> {year === "I Will Walk" ? " " : year} {vehicle.model} {vehicle.series} </strong></h5>
                 <p data-test="carVariant">{vehicle.variant}</p>
-                <div data-test="priceInfo">
+                <div data-test="priceInfo" className="price">
                     <h2> NEW <b className="amount">${vehicle.new_price}</b> RRP*  <span className="from"> FROM <b className="amount">${vehicle.from}</b> per month* </span> </h2>
                 </div>
             </div>

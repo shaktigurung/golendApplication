@@ -1,4 +1,4 @@
-
+/*** CSS Styling for Heading Component ***/
 .header-container {
     width: 80%;
     margin: auto;
@@ -53,3 +53,51 @@
     right: 14%;
 }
 
+
+/*** Media Queries ***/
+@media only screen and (max-width: 600px) {
+    .header-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .logo {
+        height: 25px;
+        width: 100px;
+    }
+
+    .navbar button {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        margin-top: 10px;
+        font-size: 0.5rem;
+        padding: 10px;
+        float: right;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .profile img {
+        z-index: 9999;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        height: 6rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 18px auto;
+    }
+
+    .profile {
+       margin-top: 30px;
+    }
+
+    .ruler-left {
+        left: 0;
+    } 
+    
+    .ruler-right {
+       right: 0;
+    }
+    
+}

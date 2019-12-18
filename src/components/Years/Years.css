@@ -1,4 +1,4 @@
-
+/*** CSS Styling for Years Component ***/
 ul.year {
   list-style-type: none;
   margin: 0;
@@ -28,4 +28,13 @@ li.yearbutton  {
 li.yearbutton:hover {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+/*** Media Queries ***/
+@media only screen and (max-width: 600px) {
+  li.yearbutton  {
+    width: 62.5px;
+    height: 14px;
+    font-size:0.8rem;
+  }
 }
